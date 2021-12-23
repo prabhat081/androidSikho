@@ -20,9 +20,4 @@ $(document).ready(function(){
             $("#menu-left").css({width:'0px',padding:'0px'});
         });
     });
-
-    // window.onresize = function(){
-    //     let menu = document.querySelector("#menu-left");
-    //     console.log(menu);
-    // }
 });
