@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>AndroidSikho</title>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,6 +12,7 @@
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <script src="js/index.js"></script>
 </head>
 <body>
 	<!-- start header coding -->
@@ -20,8 +21,8 @@
 				<a href="#"><img src="images/logomain.png" alt="" width="250"></a>
 			</div>
 			<div class="search-box">
-				<input type="text" class="form-control search" placeholder="search">
-				<button class="btn btn-primary search-btn">Search</button>
+				<input type="text" class="form-control" placeholder="search">
+				<i class="fa fa-search search-icon"></i>
 			</div>
 
 			<div class="right-box">
@@ -74,11 +75,12 @@
 	<!-- end navbar coding -->
 	<!-- start section coding -->
 		<section class="main" >
-			<div class="menu-left d-none d-sm-block">
+			<i class="fa fa-angle-right" id="menu-icon"></i>
+			<div class="menu-left" id="menu-left">
 				<h4 class="py-2 px-3">JAVA</h4>
 				<ul class="nav flex-column">
-					<li class="nav-item">
-					  <a  data-toggle="tab" class="nav-link active" href="#intro">Introduction</a>
+					<li class="nav-item bg-info">
+					  <a  data-toggle="tab" class="nav-link active text-white" href="#intro">Introduction</a>
 					</li>
 					<li class="nav-item">
 					  <a class="nav-link"  data-toggle="tab" href="#element">Element</a>
