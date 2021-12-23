@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+*:focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+body{
+	overflow-x: hidden;
+}
+.top-header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 1;
+}
+.logo{
+	width: 30%;
+}
+.search-box{
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+.search{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+	outline: none !important;
+	height: 45px !important;
+	border: none !important;
+}
+.search:focus{
+	outline: none !important;
+	border: none !important;
+}
+.search-btn{
+	height: 45px !important;
+	border-radius: 0 !important;
+	padding: 8px 20px !important;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px !important;
+	background: #30D46F !important;
+	border: none !important;
+	border-radius: 4px !important;
+	transition: 0.5s;
+}
+.search-btn:hover{
+	background: #30D46F;
+}
+.right-box{
+	width: 30%;
+	text-align: right;
+	padding: 0px 20px;
+}
+.search-box input{
+	width: 500px;
+}
+nav{
+	background: #060606 !important;
+	margin-top: 100px !important;
+	position: relative;
+}
+.dropdown-menu{
+	position: absolute !important;
+	/* width: 180px !important; */
+	top: 50px !important;
+	position: relative;
+}
+.up{
+	position: absolute;
+	top: -20px;
+	left: 15px;
+	color: #fff;
+}
+nav .nav-link{
+	color: white !important;
+	margin: 0px 8px;
+	font-weight: 300;
+	font-size: 18px;
+	transition: 0.5s;
+}
+.navbar-brand{
+	color: #fff !important;
+	font-weight: 700;
+}
+nav .nav-link:hover{
+	color: #FF3C41 !important;
+}
+.main{
+	display: flex;
+	margin-top: 160px;
+}
+.menu-left{
+	min-width: 150px;
+	width: 250px;
+	height: 100vh;
+	overflow-y: scroll;
+	/* background: #EEEEEE !important; */
+	background: #f9f9f9;
+}
+.menu-left .nav-link{
+	color: #041C32;
+	transition: 0.5s;
+}
+.menu-left .nav-link:hover{
+	color: #30D46F;
+}
+/* scroll bar  */
+.menu-left::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.menu-left::-webkit-scrollbar{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+.menu-left::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.menu-content{
+	width: 90%;
+	overflow-x: hidden;
+}
+.menu-left h4{
+	color:#2E4C6D;
+}
+.menu-content p{
+	line-height: 30px;
+	word-spacing: 5px;
+}
+.first-letter{
+	color:black;
+	font-size: 24px;
+	font-weight: 700;
+}
+@media only screen and (max-width:768px){
+	.menu-content{
+		width:100%;
+	}
+
+}
+.side-navlink .nav-link{
+ 	color: black;
+	 margin: 0;
+	 padding: 5px 10px;
+}
+.side-navlink h4{
+	font-weight: 700;
+	font-size: 30px;
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	/* background: #040303; */
+	background: #060606;
+}
+footer h4{
+	color: honeydew;
+	margin-bottom: 20px;
+}
+footer p{
+	color: #BFBFBF;
+	line-height: 25px;
+}
+
+footer .nav-link{
+	margin: 0px !important;
+	padding: 0px !important;
+	color: #BFBFBF;
+	transition: 0.5s;
+}
+footer .nav-link:hover{
+	color: #FF3C41 !important;
+}
+footer i{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.social-box{
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.social-icon{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: 0.5s ease;
+	border-radius: 3px;
+}
+
+.social-icon:hover{
+	background: #FF3C41;
+	border: none;
+}
+
+.social-icon:hover i{
+	color: #fff;
+}
+
+
+/* responsive coding */
+
+@media only screen and (max-width: 768px){
+	nav{
+		top: 130px !important;
+	}
+	.top-header{
+		flex-direction: column;
+	}
+	.logo{
+		width: 100%;
+		padding: 20px 0px;
+		display: flex;
+		justify-content: center;
+
+	}
+	.search-box{
+		width: 100%;
+	}
+	.right-box{
+		width: 100%;
+		padding: 15px 0px;
+		text-align: center;
+	}
+	.search-box input{
+		width: 370px;
+	}
+	.main{
+		margin-top: 285px !important;
+	}
+}
