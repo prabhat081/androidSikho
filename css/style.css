@@ -52,7 +52,7 @@ body{
 	width: 500px;
 }
 nav{
-	background: #1eb357!important;
+	background: #09ce55!important;
 	margin-top: 100px !important;
 	position: relative;
 }
@@ -96,11 +96,11 @@ nav .nav-link:hover{
 }
 #menu-icon{
 	position: fixed;
-	top: 305px;
-	left: 8px;
-	font-size: 14px;
-	background: #0c7534;
-	padding: 4px 15px;
+	top: 310px;
+	left: 0px;
+	font-size: 18px;
+	background: #09ce55;
+	padding: 10px 15px;
 	color: #fff;
 	cursor: pointer;
 	display: none;
@@ -108,6 +108,8 @@ nav .nav-link:hover{
 }
 
 .menu-left .nav-item{
+	border: none !important;
+	margin-bottom: 2px !important;
 	border: 1px solid #ddd !important;
 }
 .menu-left .nav-link{
@@ -124,14 +126,14 @@ nav .nav-link:hover{
 	background-color: #F5F5F5;
 }
 .menu-left::-webkit-scrollbar{
-	width: 12px;
+	width: 4px;
 	background-color: #F5F5F5;
 }
 .menu-left::-webkit-scrollbar-thumb
 {
 	/* border-radius: 10px; */
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #30D46F;
+	background-color: #ddd;
 }
 .menu-content{
 	width: 90%;
@@ -159,14 +161,35 @@ nav .nav-link:hover{
 	}
 	.menu-left{
 		position: fixed;
-		/* display: none; */
 		min-width: 0px;
 		padding: 0px;
 		width: 0px;
 		z-index: 1;
 		width: 0px;
 	}
+	.search-icon{
+		right: 200px;
+	}
 
+}
+@media only screen and (min-width:992px){
+	.search-box input{
+		width: 80%;
+	}
+	.search-icon{
+		right: 60px;
+	}
+}
+@media only screen and (max-width:425px){
+	.search-icon{
+		right: 20px;
+	}
+}
+
+@media only screen and (max-width:600px){
+	.search-icon{
+		right: 30px;
+	}
 }
 .side-navlink .nav-link{
  	color: black;
