@@ -3,7 +3,7 @@ $(document).ready(function(){
        if($(this).attr("class")=="fa fa-angle-right"){
            $(this).removeClass("fa fa-angle-right");
            $(this).addClass("fa fa-angle-left");
-           $("#menu-left").css({width:'200px',padding:'15px'});
+           $("#menu-left").css({width:'180px',padding:'10px'});
     
        }
        else{
