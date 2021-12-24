@@ -39,7 +39,7 @@ body{
 	position: relative;
 }
 .search-icon{
-	position:fixed;
+	position:absolute;
 	top:5px;
 	right: 20px;
 	cursor: pointer;
@@ -47,6 +47,7 @@ body{
 	font-size: 24px;	
 }
 .search-box input{
+	position: absolute;
 	border-radius: 50px !important;
 	border:none !important;
 	border: 2px solid #5FB457 !important;
@@ -99,16 +100,15 @@ nav .nav-link:hover{
 	position: relative;
 }
 .menu-left{
-	min-width: 200px;
 	padding: 15px;
-	width: 250px;
+	width: 200px;
 	height: auto;
 	background: #fff;
 	transition: 0.5s;
 }
 #menu-icon{
 	position: fixed;
-	top: 360px;
+	top: 400px;
 	left:0px;
 	font-size: 24px;
 	background: #09ce55;
@@ -119,13 +119,10 @@ nav .nav-link:hover{
 	display: none;
 	z-index: 100;
 }
-.menu-left ul{
-	border: 1px solid #ddd;
-}
+
 .menu-left .nav-item{
 	border: none !important;
 	margin-bottom: 2px !important;
-	border-bottom: 1px solid #ddd !important;
 }
 .menu-left .nav-link{
 	color: #6C9600;
@@ -241,7 +238,7 @@ footer i{
 
 @media only screen and (max-width: 768px){
 	nav{
-		top: 130px !important;
+		top: 95px !important;
 	}
 	.top-header{
 		flex-direction: column;
@@ -274,7 +271,6 @@ footer i{
 	.menu-left{
 		overflow-y: scroll;
 		position: fixed;
-		min-width: 0px;
 		height: 100vh;
 		padding: 0px;
 		width: 0px;
@@ -282,5 +278,6 @@ footer i{
 		width: 0px;
 	}
 }
+
 
 /* end responsive coding */
