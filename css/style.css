@@ -128,6 +128,7 @@ nav .nav-link:hover{
 .menu-left .nav-link{
 	color: #6C9600;
 	transition: 0.5s;
+	padding: 5px !important;
 }
 
 .menu-content{
