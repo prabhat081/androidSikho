@@ -18,16 +18,16 @@ body{
 	overflow-x: hidden;
 }
 /* start top header coding */
-.top-header{
-	width: 100%;
-	display: flex;
+header{
+	width: 100vw;
+	height: 100px;
+	display: flex !important;
 	justify-content: space-between;
-	align-items: center;
-	padding: 15px 10px;
+	align-items: center !important;
+	background: #fff;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #fff;
 	z-index: 1;
 }
 .logo{
@@ -35,7 +35,6 @@ body{
 }
 .search-box{
 	width: 40%;
-	margin: 0 auto;
 	position: relative;
 }
 .search-icon{
@@ -47,7 +46,6 @@ body{
 	font-size: 24px;	
 }
 .search-box input{
-	position: absolute;
 	border-radius: 50px !important;
 	border:none !important;
 	border: 2px solid #5FB457 !important;
@@ -55,7 +53,7 @@ body{
 .right-box{
 	width: 30%;
 	text-align: right;
-	padding: 0px 20px;
+	margin-right: 50px;
 }
 
 /* end top header coding */
@@ -238,8 +236,9 @@ footer i{
 	nav{
 		top: 95px !important;
 	}
-	.top-header{
+	header{
 		flex-direction: column;
+		height: auto;
 	}
 	.logo{
 		width: 100%;
@@ -249,7 +248,8 @@ footer i{
 
 	}
 	.search-box{
-		width: 100%;
+		width: 80%;
+		margin: 0 auto;
 	}
 	.right-box{
 		width: 100%;
@@ -269,11 +269,10 @@ footer i{
 	.menu-left{
 		overflow-y: scroll;
 		position: fixed;
-		height: 100vh;
+		width: 0px;
 		padding: 0px;
-		width: 0px;
+		height: 100vh;
 		z-index: 1;
-		width: 0px;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	}
 }
